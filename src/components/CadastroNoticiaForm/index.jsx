@@ -56,10 +56,10 @@ const CadastroNoticiaForm = () => {
             <div>
                 <label htmlFor='categoria'>Categoria</label>
                 <select name='categoria' onChange={aoAlterarValores} >
-                    <option value='politica'>Política</option>
-                    <option value='esporte'>Esporte</option>
-                    <option value='entretenimento'>Entretenimento</option>
+                    <option value='produto'>Produto</option>
                     <option value='tecnologia'>Tecnologia</option>
+                    <option value='vendas'>Vendas</option>
+                    <option value='rh'>RH</option>
                 </select>
             </div>
             <div>
