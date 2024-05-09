@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
 import Noticia from "../../../components/Noticia";
+import './style.css';
 
 
 const HomePage = () => {
@@ -21,8 +22,8 @@ const HomePage = () => {
         getNoticias();
     }, []);
     return (
-        <div>
-            <h1>Home</h1>
+        <div className="home">
+            <h1 style={{ padding: '10px 0', textAlign: 'center' }}>Home</h1>
             {noticias.map(noticia => (
                 <Noticia key={noticia.id} noticia={noticia} />
             ))}

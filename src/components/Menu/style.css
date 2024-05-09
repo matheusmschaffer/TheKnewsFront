@@ -3,9 +3,24 @@
     justify-content: space-between;
     height: 50px;
     background-color: aliceblue;
-    color: red;
-    align-items: center;
+    color: rgb(36, 31, 31);
+    color: #1d1c1c;
     padding: 0 20px;
+}
+
+.menu .login {
+    padding: 8px 15px;
+    background-color: #fccd07;
+    color: #1d1c1c;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+.menu .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fccd07;
 }
 
 .menu button {
@@ -20,8 +35,8 @@
 .menu_lateral {
     height: 100vh;
     width: 200px;
-    background-color: aliceblue;
-    color: red;
+    background-color: #fccd07;
+    color: #1d1c1c;
     position: fixed;
     top: 0;
     left: 0;
