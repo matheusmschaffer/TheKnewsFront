@@ -1,41 +1,44 @@
-.menu {
+.menunav {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    align-items: center;
     background-color: aliceblue;
     color: rgb(36, 31, 31);
     color: #1d1c1c;
     padding: 0 20px;
+    height: 50px;
 }
 
-.menu .login {
-    padding: 8px 15px;
+.menunav .login {
+    margin: 0;
+    padding: 5px 15px;
     background-color: #fccd07;
     color: #1d1c1c;
     border-radius: 7px;
     cursor: pointer;
+    height: 35px;
+    font-size: inherit;
 
 }
 
-.menu .logo {
+.menunav .logo {
     font-size: 1.5em;
     font-weight: bold;
     color: #fccd07;
 }
 
-.menu button {
+.menunav .bars {
     background-color: transparent;
     border: none;
     color: inherit;
     font-size: 1.5em;
     cursor: pointer;
-
 }
 
 .menu_lateral {
     height: 100vh;
     width: 200px;
-    background-color: #fccd07;
+    background-color: #f4f4f4;
     color: #1d1c1c;
     position: fixed;
     top: 0;
@@ -43,9 +46,21 @@
     padding: 0 20px;
 }
 
+.menu_lateral ul li {
+    margin-bottom: 15px;
+}
+
+.menu_lateral ul li:hover {
+    color: #fccd07;
+}
+
 .menu_lateral .fechar {
     display: flex;
     justify-content: flex-end;
     padding: 10px;
     cursor: pointer;
+}
+
+.menu_lateral .fechar:hover {
+    color: #fccd07;
 }

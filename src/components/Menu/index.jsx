@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react';
 import { useRouter } from 'next/navigation'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark, faMugHot } from '@fortawesome/free-solid-svg-icons'
 
 
 const Menu = () => {
@@ -12,13 +12,13 @@ const Menu = () => {
     const router = useRouter()
     return (
         <>
-            <nav className='menu'>
-                <button onClick={() => setMenuLateral(!menuLateral)}><FontAwesomeIcon icon={faBars} size="1x" /></button>
-                <div className='logo'>Logo</div>
+            <nav className='menunav'>
+                <button className='bars' onClick={() => setMenuLateral(!menuLateral)}><FontAwesomeIcon icon={faBars} size="1x" /></button>
+                <div className='logo'><FontAwesomeIcon icon={faMugHot} />Logo</div>
                 <button className='login' onClick={() => router.push('/login')}>Login</button>
             </nav>
 
-            {menuLateral && <div className='menu_lateral' onMouseLeave={() => setMenuLateral(false)}>
+            {menuLateral && <div className='menu_lateral' onMouseLeave={() => setMenuLateral(true)}>
                 <div className='fechar' onClick={() => setMenuLateral(false)}><FontAwesomeIcon icon={faXmark} size='2x' color='#1d1c1c' /></div>
                 <ul>
                     <li><Link href="/home">Home</Link></li>
