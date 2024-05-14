@@ -18,8 +18,8 @@ const Menu = () => {
                 <button className='login' onClick={() => router.push('/login')}>Login</button>
             </nav>
 
-            {menuLateral && <div className='menu_lateral' onMouseLeave={() => setMenuLateral(true)}>
-                <div className='fechar' onClick={() => setMenuLateral(false)}><FontAwesomeIcon icon={faXmark} size='2x' color='#1d1c1c' /></div>
+            {menuLateral && <div className='menu_lateral' onMouseLeave={() => setMenuLateral(false)}>
+                <div className='fechar' onClick={() => setMenuLateral(false)}><FontAwesomeIcon icon={faXmark} size='2x' color='#fccd07' /></div>
                 <ul>
                     <li><Link href="/home">Home</Link></li>
                     <li><Link href="/noticias/produto">Produto</Link></li>
