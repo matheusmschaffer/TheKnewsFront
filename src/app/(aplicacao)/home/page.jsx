@@ -25,14 +25,14 @@ const HomePage = () => {
     return (
         <div className="home">
             <div className="esquerda">
-                <LateralEsquerdo />
+                {noticias[0] && <LateralEsquerdo noticia={noticias[0]} />}
             </div>
             <div>
                 {noticias.map(noticia => (
                     <Noticia key={noticia.id} noticia={noticia} />
                 ))}
             </div>
-            <LateralDireito />
+            {getNoticias() && <LateralDireito noticias={noticias} />}
         </div>
     );
 }
